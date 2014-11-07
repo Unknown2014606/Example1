@@ -1,0 +1,35 @@
+.panel.admin-video
+ %h1 Add New Video
+ = form_for :video,url: {:action => "video_add"} do |f|
+  = label_tag(:title, "Title:")
+  = f.text_field(:title)
+
+  = label_tag(:url,"Video URL:")
+  = f.text_field(:url)
+
+  = label_tag(:image, "Thumbnail image URL:")
+  = f.text_field(:image)
+
+  = label_tag(:excerpt, "Excerpt:")
+  = f.text_area(:excerpt, size: "80x5")
+
+  = label_tag(:topic, "Topic:")
+  - options = [['Uncategorized',0]]
+  - @topics.each do |topic|
+   - opt = [topic[:text],topic[:id]]
+   - options.push(opt)
+   - unless topic[:children].nil?
+    - topic[:children].each do |child|
+     - opt = ['...' + child[:text],child[:id]]
+     - options.push(opt)
+  = f.select(:topic,options_for_select(options))
+
+  = label_tag(:before_content, "Before content:")
+  = f.text_area(:before_content, size: "80x5")
+
+  = label_tag(:after_content, "After content:")
+  = f.text_area(:after_content, size: "80x5")
+  %div
+   %a(class="button tiny" href="/videos/admin/list") Cancel
+   = f.submit("Add New Video", :class => "button tiny")
+

@@ -1,0 +1,122 @@
+// Place all the styles related to the admin controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "settings";
+
+.panel.login {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+//admin login
+form#login label {
+  display: inline-block;
+  width: rem-calc(80);
+  margin-bottom: rem-calc(10)
+}
+
+//topicsadd.haml
+.panel.topics {
+  margin-top: 1rem;
+}
+
+.panel.topics h1 {
+  text-align: center;
+}
+
+ul.ham-topic {
+  margin-top: 0;
+  background-color: $ham-box-bg;
+  padding: rem-calc(5);
+  border-radius: $ham-panel-radius;
+}
+
+div.ham-topic-edit {
+  background-color: $ham-box-bg;
+  padding: rem-calc(5);
+  border-radius: $ham-panel-radius;
+}
+
+div.ham-topic-edit form fieldset:nth-of-type(1) {
+  width: 60%;
+  margin-left: 20%;
+  border: 0;
+}
+
+div.ham-topic-edit label {
+  margin-top: rem-calc(10);
+}
+
+div.ham-topic-edit select {
+  width: 100%;
+}
+
+div.ham-topic-edit form fieldset:nth-of-type(2) {
+  text-align: center;
+  border: 0;
+}
+
+div.ham-topic-edit .button {
+  margin-right: rem-calc(10);
+}
+
+ul.ham-topic {
+  list-style-type: none;
+}
+
+.ham-parent {
+  padding-left: 0px;
+}
+
+.ham-child {
+  padding-left: 20px;
+}
+
+
+form#topics label {
+  display: block;
+}
+
+form select {
+  width: 50%;
+}
+
+//admin video list
+.panel.admin-vidlist .button {
+  margin-right: rem-calc(5);
+  padding-top: rem-calc(2);
+  padding-bottom: rem-calc(2);
+}
+
+//admin video edit
+.panel.admin-vidlist,
+.panel.admin-video {
+  margin-top: 1rem;
+}
+
+.panel.admin-video label {
+  font-weight: bold;
+  display: block;
+  margin-top: rem-calc(10);
+}
+
+.panel.admin-video textarea,
+.panel.admin-video input:not([type="submit"]){
+  width: 100%;
+}
+
+.panel.admin-video select {
+  width: 20%;
+}
+
+.panel.admin-video div {
+  text-align: center;
+  margin-top: rem-calc(10);
+}
+
+.panel.admin-video div .button:nth-of-type(1) {
+  margin-right: rem-calc(100);
+  margin-left: rem-calc(100);
+}
+

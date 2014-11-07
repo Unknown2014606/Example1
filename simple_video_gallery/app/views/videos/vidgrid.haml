@@ -1,0 +1,17 @@
+%div.panel.ham-panel-grid
+ %h1 
+  Videos about
+  =(@topic ? @topic : "Amateur Radio")
+
+ %ul.large-block-grid-3.medium-block-grid-2.small-block-grid-1
+  - if defined? @list
+   - unless @list.nil?
+    - @list.each do |vid|
+     %li
+      %div(data-tooltip="" data-width="300px" class="has-tip tip-bottom" title="#{vid['excerpt']}")
+       %a(href="/videos/view/#{@topid}/#{vid['id']}")
+        %img(src="#{vid['image']=='' ? '/images/sorry.png' : vid['image']}")
+        .vidtitle= vid['title']
+
+
+

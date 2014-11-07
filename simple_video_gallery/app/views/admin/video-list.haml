@@ -1,0 +1,35 @@
+.panel.admin-vidlist
+ %h1 Videos
+ %div
+  %a.button.tiny(href="/admin/video_new") Add New Video 
+ %div
+  - @list.each do |vid|
+   .row.ham-row-striped
+    .large-8.columns
+     = vid['title']
+    .large-4.columns
+     %a.button.tiny(href="/admin/video_view/#{vid['id']}") View
+     %a.button.tiny(href="/admin/video_edit/#{vid['id']}") Edit
+     %a.delete-button.button.tiny(href="/admin/video_delete/#{vid['id']}" data-reveal-id="deleteModal") Delete
+ %div
+  - unless @prev < 0
+   %a.button.tiny(href="/admin/video_list/#{@prev}") Prev
+  -else
+   %a.button.tiny.disabled Prev
+  - unless @next < 0
+   %a.button.tiny(href="/admin/video_list/#{@next}") Next
+  -else
+   %a.button.tiny.disabled Next
+  
+%div.reveal-modal.tiny#deleteModal(data-reveal)
+ %h2 Delete video?
+ %p#modal-title Details
+ %a.close-reveal-modal &#215;
+ %a.button.tiny#modal-delete(href="#") Confirm Delete Video
+%script
+ $('a.delete-button').click(function(){
+ var a = $('#modal-delete');
+ $(a).attr('href',this.href);
+ var title = $(this).parent().parent().children('div:first').text();
+ $('#modal-title').text(title);
+ });
