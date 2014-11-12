@@ -1,4 +1,14 @@
 .panel.large10.columns
+  %h1
+  Video:
+  = @video['title']
+
+  %p
+  %h4 Except:
+  = @video['excerpt'] 
+
+  %p
+  = Haml::Engine.new(@video['before_content']).render
 
 %html
   %body
@@ -41,3 +51,5 @@
       function stopVideo() {
         player.stopVideo();
       }
+  %p
+  = Haml::Engine.new(@video['after_content']).render
