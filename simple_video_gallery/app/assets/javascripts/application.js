@@ -15,3 +15,5 @@
 // require turbolinks
 //= require modernizr
 //= require foundation.min
+//= require CJL.0.1.min
+//= require rotate

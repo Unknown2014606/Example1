@@ -10,7 +10,12 @@
   %p
   = Haml::Engine.new(@video['before_content']).render
 
-%html
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=gb2312", "http-equiv" => "Content-Type"}/
+    %script{:src => "../CJL.0.1.min.js"}
+    %script{:src => "../rotate.js"}
   %body
     #player
     :javascript
@@ -51,5 +56,22 @@
       function stopVideo() {
         player.stopVideo();
       }
-  %p
-  = Haml::Engine.new(@video['after_content']).render
+  %body
+    :css
+      #idContainer{border:0px solid #000;width:96px; height:96px; margin: 10px 550px;background: center no-repeat;}
+    #idContainer
+    :javascript
+      (function(){
+      
+      var container = $$("idContainer"), src = "http://imageshack.com/a/img661/1977/w17dUW.png",
+      	options = {
+      		onPreLoad: function(){ container.style.backgroundImage = "url('http://images.cnblogs.com/cnblogs_com/cloudgamer/169629/o_loading.gif')"; },
+      		onLoad: function(){ container.style.backgroundImage = ""; },
+      		onError: function(err){ container.style.backgroundImage = ""; alert(err); }
+      	},
+      	it = new ImageTrans( container, options );
+      it.load(src);
+      
+      })()
+
+
