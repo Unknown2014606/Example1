@@ -41251,3 +41251,531 @@ ActionView::Template::Error (undefined method `[]' for nil:NilClass):
   Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
   Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
   Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-14 15:53:49 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VideosController#videos as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"  WHERE (topic = 15)[0m
+  Rendered videos/vidgrid.haml within layouts/layout (34.4ms)
+Completed 200 OK in 303ms (Views: 262.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2014-11-14 15:53:50 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:50 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-14 15:53:50 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:50 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:50 -0600
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:50 -0600
+
+
+Started GET "/assets/rotate.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:50 -0600
+
+
+Started GET "/assets/CJL.0.1.min.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:50 -0600
+
+
+Started GET "/assets/foundation.min.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:50 -0600
+
+
+Started GET "/videos/admin" for 127.0.0.1 at 2014-11-14 15:53:51 -0600
+Processing by AdminController#admin as HTML
+  Rendered admin/login.haml within layouts/layout-basic (44.5ms)
+Completed 200 OK in 67ms (Views: 65.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2014-11-14 15:53:51 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-14 15:53:51 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:51 -0600
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-11-14 15:53:51 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:51 -0600
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:51 -0600
+
+
+Started GET "/assets/foundation.min.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:51 -0600
+
+
+Started GET "/assets/CJL.0.1.min.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:51 -0600
+
+
+Started GET "/assets/rotate.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:51 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:51 -0600
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2014-11-14 15:53:55 -0600
+Processing by AdminController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5nsbhcCeM9SUp+ZuBDnYW2P+Od8NJp1daYwGzQygOhA=", "login"=>"admin", "password"=>"[FILTERED]", "commit"=>"Login"}
+Redirected to http://0.0.0.0:3000/admin/home
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/home" for 127.0.0.1 at 2014-11-14 15:53:55 -0600
+Processing by AdminController#home as HTML
+  Rendered admin/admin-home.haml within layouts/layout-admin (1.0ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2014-11-14 15:53:55 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-14 15:53:55 -0600
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-11-14 15:53:55 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:55 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:55 -0600
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:55 -0600
+
+
+Started GET "/assets/CJL.0.1.min.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:55 -0600
+
+
+Started GET "/assets/foundation.min.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:55 -0600
+
+
+Started GET "/assets/rotate.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:55 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:55 -0600
+
+
+Started GET "/admin/video_list" for 127.0.0.1 at 2014-11-14 15:53:56 -0600
+Processing by AdminController#video_list as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "videos"
+  [1m[36mVideo Load (0.2ms)[0m  [1mSELECT  "videos".* FROM "videos"  LIMIT 15 OFFSET 0[0m
+  Rendered admin/video-list.haml within layouts/layout-admin (8.0ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2014-11-14 15:53:56 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-14 15:53:56 -0600
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-11-14 15:53:57 -0600
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:57 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:57 -0600
+
+
+Started GET "/assets/foundation.min.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:57 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:57 -0600
+
+
+Started GET "/assets/CJL.0.1.min.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:57 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:57 -0600
+
+
+Started GET "/assets/rotate.js?body=1" for 127.0.0.1 at 2014-11-14 15:53:57 -0600
+
+
+Started GET "/admin/video_view/1" for 127.0.0.1 at 2014-11-14 15:53:57 -0600
+Processing by AdminController#video_view as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVideo Load (0.2ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = 1 LIMIT 1
+  Rendered admin/video-view.haml within layouts/layout-admin (19.2ms)
+Completed 500 Internal Server Error in 78ms
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab used for indentation, but the rest of the document was indented using 2 spaces.):
+    63:       (function(){
+    64:       
+    65:       var container = $$("idContainer"), src ="http://imageshack.com/a/img673/4039/HF3tej.png" 
+    66: 	//"http://imageshack.com/a/img661/1977/w17dUW.png",
+    67:       	options = {
+    68:       		onPreLoad: function(){ container.style.backgroundImage = "url('http://images.cnblogs.com/cnblogs_com/cloudgamer/169629/o_loading.gif')"; },
+    69:       		onLoad: function(){ container.style.backgroundImage = ""; },
+  app/views/admin/video-view.haml:66
+  app/controllers/admin_controller.rb:6:in `admin_render'
+  app/controllers/admin_controller.rb:77:in `video_view'
+
+
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.0ms)
+
+
+Started GET "/admin/video_view/1" for 127.0.0.1 at 2014-11-14 15:54:13 -0600
+Processing by AdminController#video_view as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVideo Load (0.2ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."id" = 1 LIMIT 1[0m
+  Rendered admin/video-view.haml within layouts/layout-admin (8.7ms)
+Completed 200 OK in 18ms (Views: 13.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2014-11-14 15:54:13 -0600
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-11-14 15:54:13 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-14 15:54:13 -0600
+
+
+Started GET "/assets/foundation.min.js?body=1" for 127.0.0.1 at 2014-11-14 15:54:13 -0600
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2014-11-14 15:54:13 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-14 15:54:13 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-14 15:54:13 -0600
+
+
+Started GET "/assets/CJL.0.1.min.js?body=1" for 127.0.0.1 at 2014-11-14 15:54:13 -0600
+
+
+Started GET "/assets/rotate.js?body=1" for 127.0.0.1 at 2014-11-14 15:54:13 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-14 15:54:13 -0600
+
+
+Started GET "/admin/video_view/CJL.0.1.min.js" for 127.0.0.1 at 2014-11-14 15:54:13 -0600
+
+ActionController::RoutingError (No route matches [GET] "/admin/video_view/CJL.0.1.min.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hadoop/.rvm/rubies/ruby-1.9.3-p550/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/hadoop/.rvm/rubies/ruby-1.9.3-p550/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/hadoop/.rvm/rubies/ruby-1.9.3-p550/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.3ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.5ms)
+
+
+Started GET "/admin/video_view/rotate.js" for 127.0.0.1 at 2014-11-14 15:54:13 -0600
+Processing by AdminController#video_view as JS
+  Parameters: {"id"=>"rotate"}
+  [1m[35mVideo Load (0.2ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = 0 LIMIT 1
+  Rendered admin/video-view.haml within layouts/layout-admin (37.8ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    1: .panel.large10.columns
+    2:   %h1
+    3:   Video:
+    4:   = @video['title']
+    5: 
+    6:   %p
+    7:   %h4 Except:
+  app/views/admin/video-view.haml:4:in `_app_views_admin_video_view_haml__1388223397685141593_70359248637620'
+  app/controllers/admin_controller.rb:6:in `admin_render'
+  app/controllers/admin_controller.rb:77:in `video_view'
+
+
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.6ms)
+
+
+Started GET "/admin/video_view/1" for 127.0.0.1 at 2014-11-14 15:54:57 -0600
+Processing by AdminController#video_view as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVideo Load (0.2ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."id" = 1 LIMIT 1[0m
+  Rendered admin/video-view.haml within layouts/layout-admin (7.8ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2014-11-14 15:54:57 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-14 15:54:57 -0600
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-11-14 15:54:57 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-14 15:54:57 -0600
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2014-11-14 15:54:57 -0600
+
+
+Started GET "/assets/foundation.min.js?body=1" for 127.0.0.1 at 2014-11-14 15:54:57 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-14 15:54:57 -0600
+
+
+Started GET "/assets/rotate.js?body=1" for 127.0.0.1 at 2014-11-14 15:54:57 -0600
+
+
+Started GET "/assets/CJL.0.1.min.js?body=1" for 127.0.0.1 at 2014-11-14 15:54:57 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-14 15:54:57 -0600
+
+
+Started GET "/admin/video_view/CJL.0.1.min.js" for 127.0.0.1 at 2014-11-14 15:54:57 -0600
+
+ActionController::RoutingError (No route matches [GET] "/admin/video_view/CJL.0.1.min.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hadoop/.rvm/rubies/ruby-1.9.3-p550/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/hadoop/.rvm/rubies/ruby-1.9.3-p550/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/hadoop/.rvm/rubies/ruby-1.9.3-p550/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.8ms)
+
+
+Started GET "/admin/video_view/rotate.js" for 127.0.0.1 at 2014-11-14 15:54:57 -0600
+Processing by AdminController#video_view as JS
+  Parameters: {"id"=>"rotate"}
+  [1m[35mVideo Load (0.2ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = 0 LIMIT 1
+  Rendered admin/video-view.haml within layouts/layout-admin (5.6ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    1: .panel.large10.columns
+    2:   %h1
+    3:   Video:
+    4:   = @video['title']
+    5: 
+    6:   %p
+    7:   %h4 Except:
+  app/views/admin/video-view.haml:4:in `_app_views_admin_video_view_haml__1388223397685141593_70359182991400'
+  app/controllers/admin_controller.rb:6:in `admin_render'
+  app/controllers/admin_controller.rb:77:in `video_view'
+
+
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.1ms)
+
+
+Started GET "/admin/video_view/1" for 127.0.0.1 at 2014-11-14 15:55:33 -0600
+Processing by AdminController#video_view as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVideo Load (0.2ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."id" = 1 LIMIT 1[0m
+  Rendered admin/video-view.haml within layouts/layout-admin (5.0ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/video_view/CJL.0.1.min.js" for 127.0.0.1 at 2014-11-14 15:55:33 -0600
+
+ActionController::RoutingError (No route matches [GET] "/admin/video_view/CJL.0.1.min.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hadoop/.rvm/rubies/ruby-1.9.3-p550/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/hadoop/.rvm/rubies/ruby-1.9.3-p550/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/hadoop/.rvm/rubies/ruby-1.9.3-p550/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.1ms)
+
+
+Started GET "/admin/video_view/rotate.js" for 127.0.0.1 at 2014-11-14 15:55:33 -0600
+Processing by AdminController#video_view as JS
+  Parameters: {"id"=>"rotate"}
+  [1m[35mVideo Load (0.2ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = 0 LIMIT 1
+  Rendered admin/video-view.haml within layouts/layout-admin (6.2ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    1: .panel.large10.columns
+    2:   %h1
+    3:   Video:
+    4:   = @video['title']
+    5: 
+    6:   %p
+    7:   %h4 Except:
+  app/views/admin/video-view.haml:4:in `_app_views_admin_video_view_haml__1388223397685141593_36062520'
+  app/controllers/admin_controller.rb:6:in `admin_render'
+  app/controllers/admin_controller.rb:77:in `video_view'
+
+
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.3ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-11-14 15:55:33 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-14 15:55:33 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-14 15:55:33 -0600
+
+
+Started GET "/assets/foundation.min.js?body=1" for 127.0.0.1 at 2014-11-14 15:55:33 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-14 15:55:33 -0600
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2014-11-14 15:55:33 -0600
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2014-11-14 15:55:33 -0600
+
+
+Started GET "/assets/CJL.0.1.min.js?body=1" for 127.0.0.1 at 2014-11-14 15:55:33 -0600
+
+
+Started GET "/assets/rotate.js?body=1" for 127.0.0.1 at 2014-11-14 15:55:33 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-14 15:55:33 -0600
+
+
+Started GET "/admin/video_view/CJL.0.1.min.js" for 127.0.0.1 at 2014-11-14 15:55:33 -0600
+
+ActionController::RoutingError (No route matches [GET] "/admin/video_view/CJL.0.1.min.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hadoop/.rvm/rubies/ruby-1.9.3-p550/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/hadoop/.rvm/rubies/ruby-1.9.3-p550/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/hadoop/.rvm/rubies/ruby-1.9.3-p550/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.8ms)
+
+
+Started GET "/admin/video_view/rotate.js" for 127.0.0.1 at 2014-11-14 15:55:34 -0600
+Processing by AdminController#video_view as JS
+  Parameters: {"id"=>"rotate"}
+  [1m[36mVideo Load (0.2ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."id" = 0 LIMIT 1[0m
+  Rendered admin/video-view.haml within layouts/layout-admin (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    1: .panel.large10.columns
+    2:   %h1
+    3:   Video:
+    4:   = @video['title']
+    5: 
+    6:   %p
+    7:   %h4 Except:
+  app/views/admin/video-view.haml:4:in `_app_views_admin_video_view_haml__1388223397685141593_36062520'
+  app/controllers/admin_controller.rb:6:in `admin_render'
+  app/controllers/admin_controller.rb:77:in `video_view'
+
+
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/hadoop/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.5ms)

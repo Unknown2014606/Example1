@@ -57,12 +57,13 @@
   %body
     %p#rate Rate: 0
     :css
-      #idContainer{border:0px solid #000;width:48px; height:48px; margin: 10px 550px;background: center no-repeat;}
+      #idContainer{border:0px solid #000;width:100px; height:100px; margin: 10px 550px;background: center no-repeat;}
     #idContainer
     :javascript
       (function(){
       
-      var container = $$("idContainer"), src = "http://imageshack.com/a/img661/1977/w17dUW.png",
+      var container = $$("idContainer"), src ="http://imageshack.com/a/img673/4039/HF3tej.png" 
+        //"http://imageshack.com/a/img661/1977/w17dUW.png",
       	options = {
       		onPreLoad: function(){ container.style.backgroundImage = "url('http://images.cnblogs.com/cnblogs_com/cloudgamer/169629/o_loading.gif')"; },
       		onLoad: function(){ container.style.backgroundImage = ""; },
