@@ -1,0 +1,76 @@
+.panel.large10.columns
+  %h1
+  Video:
+  = @video['title']
+
+  %p
+  %h4 Except:
+  = @video['excerpt'] 
+
+  %p
+  = Haml::Engine.new(@video['before_content']).render
+  
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml"} 
+  %body
+    #player
+    :javascript    
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'M7lc1UVf-VE',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+
+      function onPlayerReady(event) {
+	
+        event.target.playVideo();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+             player.seekTo(13,true); 
+             player.stopVideo();
+             done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+  %head
+    %meta{:content => "text/html; charset=gb2312", "http-equiv" => "Content-Type"}/
+    %script{:src => "CJL.0.1.min.js"}
+    %script{:src => "rotate.js"}
+  %body
+    %p#rate "Rate: 0"
+    :css
+      #idContainer{border:0px solid #000;width:48px; height:48px; margin: 10px 550px;background: center no-repeat;}
+    #idContainer
+    :javascript
+      (function(){
+      
+      var container = $$("idContainer"), src = "http://imageshack.com/a/img661/1977/w17dUW.png",
+      	options = {
+      		onPreLoad: function(){ container.style.backgroundImage = "url('http://images.cnblogs.com/cnblogs_com/cloudgamer/169629/o_loading.gif')"; },
+      		onLoad: function(){ container.style.backgroundImage = ""; },
+      		onError: function(err){ container.style.backgroundImage = ""; alert(err); }
+      	},
+      	it = new ImageTrans( container, options );
+      it.load(src);
+      
+      })()
+
+
