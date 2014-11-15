@@ -1,4 +1,5 @@
 simple_video_gallery
+I am Qian Ning, I have mental disorder and i am stupid, I speak for myself!
 ====================
 
 A simple web video gallery using Ruby-on-Rails
