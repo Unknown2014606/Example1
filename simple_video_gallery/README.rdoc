@@ -1,32 +1,28 @@
 == README
 
-== A simple video gallery
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-== Features
-   Videos sorted by topic
-   Left sidebar menu for topics
-   Grid layout index pages with thumbnail images for videos
-   Embedded video player
-   Admin to edit topics and videos
+Things you may want to cover:
 
-== Requirements
-   Requires the rails gem installed.
-   Requires the sqlite3 gem installed.
-   Uses sqlite3 database to store the topics and video information such as captions
-   Production could use Postgres or MySQL instead
+* Ruby version
 
-== Installation
-  cd /path/to/gallery
-      
-  git clone git://github.com/BugsSoren/simple_video_gallery.git
+* System dependencies
 
-== Usage
-  Simply start a rails server
-  rails server
+* Configuration
 
-  Includes layouts, page templates and test data for videos for a complete demo.
-  Page templates and layouts use haml and are located in the app/views directory.
-  The app/views/layouts directory has templates for the the page layouts.
-  The app/views/videos directory has templates for the the video index and video display pages.
-  The app/views/admin directory has templates for the admin pages.
+* Database creation
 
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.

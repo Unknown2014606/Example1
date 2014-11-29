@@ -11,21 +11,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140607112204) do
+ActiveRecord::Schema.define(version: 20141126042222) do
 
-  create_table "topics", force: true do |t|
-    t.string  "topic",  limit: 20
-    t.integer "parent"
+  create_table "comments", force: true do |t|
+    t.text     "content"
+    t.string   "gender"
+    t.integer  "age"
+    t.integer  "score"
+    t.integer  "video_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "comments", ["video_id"], name: "index_comments_on_video_id"
+
+  create_table "presidents", force: true do |t|
+    t.string   "name"
+    t.string   "party"
+    t.integer  "supportNo"
+    t.string   "wiki"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "videos", force: true do |t|
-    t.string  "title",          limit: 250
-    t.string  "url",            limit: 250
-    t.string  "image",          limit: 250
-    t.text    "excerpt"
-    t.integer "topic"
-    t.text    "before_content"
-    t.text    "after_content"
+    t.string   "title"
+    t.string   "topic"
+    t.string   "president"
+    t.string   "embed"
+    t.string   "pic"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class AdminControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "should get admin" do
+    get :admin
+    assert_response :success
+  end
+
 end
