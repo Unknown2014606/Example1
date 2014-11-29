@@ -1,0 +1,133 @@
+<header>
+<h1>Historic President Debate</h1>
+</header>
+
+<section1>
+
+<h1>Video1</h1>
+
+<p>
+  <strong>Title:</strong>
+  <%= @video1.title %>
+</p>
+ 
+<p>
+  <strong>Topic:</strong>
+  <%= @video1.topic %>
+</p>
+
+<p>
+  <strong>President:</strong>
+  <%= @video1.president %>
+</p>
+
+<p>
+  <%= @video1.embed.html_safe %>
+</p>
+
+<p>
+  <strong>Pic:</strong>
+  <%= image_tag @video1.pic, size: "100x60" %>
+</p>
+
+<h2>Add a comment:</h2>
+<%= form_for :comment, url: comment_add1_path(@video1, @video2) do |f| %>
+  <p>
+    <%= f.label :content %><br>
+    <%= f.text_area :content %>
+  </p>
+  <p>
+    <%= f.label :gender %><br>
+    <%= f.text_field :gender %>
+  </p>
+  <p>
+    <%= f.label :age %><br>
+    <%= f.text_field :age %>
+  </p>
+  <p>
+    <%= f.label :score %><br>
+    <%= f.text_field :score %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+
+<h2>Comments</h2>
+<% @comments1.each do |comment| %>
+  <p>
+    <strong>Content:</strong>
+    <%= comment.content %>
+  </p>
+<% end %>
+
+</section1>
+
+
+<section2>
+
+<h1>Video2</h1>
+
+<p>
+  <strong>Title:</strong>
+  <%= @video2.title %>
+</p>
+ 
+<p>
+  <strong>Topic:</strong>
+  <%= @video2.topic %>
+</p>
+
+<p>
+  <strong>President:</strong>
+  <%= @video2.president %>
+</p>
+
+<p>
+  <%= @video2.embed.html_safe %>
+</p>
+
+<p>
+  <strong>Pic:</strong>
+  <%= image_tag @video2.pic, size: "100x60" %>
+</p>
+
+<h2>Add a comment:</h2>
+<%= form_for :comment, url: comment_add2_path(@video1, @video2) do |f| %>
+  <p>
+    <%= f.label :content %><br>
+    <%= f.text_area :content %>
+  </p>
+  <p>
+    <%= f.label :gender %><br>
+    <%= f.text_field :gender %>
+  </p>
+  <p>
+    <%= f.label :age %><br>
+    <%= f.text_field :age %>
+  </p>
+  <p>
+    <%= f.label :score %><br>
+    <%= f.text_field :score %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<h2>Comments</h2>
+<% @comments2.each do |comment| %>
+  <p>
+    <strong>Content:</strong>
+    <%= comment.content %>
+  </p>
+<% end %>
+
+</section2>
+
+<footer>
+Copyright, Unknown
+</footer>
+
+

@@ -1,0 +1,52 @@
+<h1>Welcome</h1>
+<label>Topics</label>
+<select>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+<br>
+<label>Pre1</label>
+<select>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+<br>
+<label>Pre2</label>
+<select>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+<br>
+<h2>Recommend Videos</h2>
+<br>
+<% @videos.each do |video| %>
+	<%= button_to video.pic, video_path(video) %>
+<% end %>
+
+<h2>Admin Login</h2>
+<%= form_for :login, url: admin_login_path do |f|%>
+  <p>
+    <label>Username</label><br>
+    <%= f.text_field :username %><label><%= @usrerr %></label>
+  </p>
+ 
+  <p>
+    <label>Password</label><br>
+    <%= f.text_field :password %><label><%= @pswerr %></label>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+	
+<% end %>
+
+
+
+

@@ -1,0 +1,58 @@
+<h1>Video</h1>
+
+<p>
+  <strong>Title:</strong>
+  <%= @video.title %>
+</p>
+ 
+<p>
+  <strong>Topic:</strong>
+  <%= @video.topic %>
+</p>
+
+<p>
+  <strong>President:</strong>
+  <%= @video.president %>
+</p>
+
+<p>
+  <%= @video.embed.html_safe %>
+</p>
+
+<p>
+  <strong>Pic:</strong>
+  <%= image_tag @video.pic, size: "100x60" %>
+</p>
+
+<h2>Add a comment:</h2>
+<%= form_for :comment, url: comment_add_path(@video) do |f| %>
+  <p>
+    <%= f.label :content %><br>
+    <%= f.text_area :content %>
+  </p>
+  <p>
+    <%= f.label :gender %><br>
+    <%= f.text_field :gender %>
+  </p>
+  <p>
+    <%= f.label :age %><br>
+    <%= f.text_field :age %>
+  </p>
+  <p>
+    <%= f.label :score %><br>
+    <%= f.text_field :score %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+
+<h2>Comments</h2>
+<% @comments.each do |comment| %>
+  <p>
+    <strong>Content:</strong>
+    <%= comment.content %>
+  </p>
+<% end %>
+
