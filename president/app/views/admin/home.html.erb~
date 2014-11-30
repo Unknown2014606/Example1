@@ -1,3 +1,4 @@
+<body background="res.travel.ifeng.com/app/scenery/2011/06/13/130795094552f9.jpg">
 <h1>Admin home</h1>
 <h2>President</h2>
 <%= link_to 'Add', admin_president_new_path%>
@@ -5,4 +6,4 @@
 <h2>Video</h2>
 <%= link_to 'Add', admin_video_new_path%>
 <%= link_to 'List', admin_video_list_path%><br>
-
+</body>

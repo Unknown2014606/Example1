@@ -14,5 +14,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-//= require CJL.0.1.min
-//= require rotate
